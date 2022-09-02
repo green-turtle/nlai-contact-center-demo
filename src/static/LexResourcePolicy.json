@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowChimePstnAudioUseBot",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "voiceconnector.chime.amazonaws.com"
+      },
+      "Action": "lex:StartConversation",
+      "Resource": "arn:aws:lex:us-east-1:accountnumber:bot-alias/UT2VLDCS7W/BCMS3JDG5S",
+      "Condition": {
+        "StringEquals": {
+          "AWS:SourceAccount": "acountnumber"
+        },
+        "ArnEquals": {
+        "AWS:SourceArn": "arn:aws:voiceconnector:us-east-1:accountnumber:sma/17ee221e-8642-445f-9619-0bbd1daaf24f"
+        }
+      }
+    }
+  ]
+}
+
