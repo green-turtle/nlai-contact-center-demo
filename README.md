@@ -98,10 +98,6 @@ Deploying the Amazon Chime SDK demo applications contained in this repository wi
 
 The voice prompt audio files are not encrypted, as would be recommended in a production-grade application.
 
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
 ## License
 
 All code in this repository is licensed under the MIT-0 License. See the LICENSE file.
